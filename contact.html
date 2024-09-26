@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="/icons/WID LOGO.svg">
+        <title>Wide Intelligent Data</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="styling/general.css">
+        <link rel="stylesheet" href="styling/header.css">
+        <link rel="stylesheet" href="styling/style.css">
+        <link rel="stylesheet" href="styling/popup.css">
+        <link rel="stylesheet" href="styling/smallscreen.css">
+        <script src="scripts/home.js"></script>
+        <script src="scripts/scripts.js"></script>
+        <script src="https://kit.fontawesome.com/5f391ba7d8.js" crossorigin="anonymous"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+             (function(){
+                 emailjs.init({
+                 publicKey: "nUjMnQCJADsJTrCke",
+                  });
+              })();
+            </script>
+    </head>
+    <body>
+
+        <script src="scripts/firebase.js" type="module"></script>
+
+        
+        <div class="contact-header">
+            <a href="index.html">Home</a>
+            <span>|</span>
+            <a href="#">Contact</a>
+        </div>
+
+
+        <div class="contact-page">
+            <div class="side-icons-container">
+
+                <p>Get in touch</p>
+
+                <h2>Contact us</h2>
+
+                <span><i class="material-icons">call</i>+254746370069</span>
+                <span><i class="material-icons">mail</i>wideintelligentdata@gmail.com</span>
+                <span><i class="material-icons">call</i>Kisii,Kenya</span>
+            </div>
+            <div class="contact-form">
+                     <div class="input-contact-box">
+                    <input type="text" id="Fullname" placeholder="Fullname">
+                    <p id="FullnameError"></p>
+
+                    <input type="email" id="EmailContact" placeholder="Email">
+                    <p id="EmailError"></p>
+
+                    <input type="text" id="ProjectType" placeholder="Project Type">
+                    <p id="ProjectTypeError"></p>
+
+                    <input type="tel" id="ContactTel" placeholder="Phone number">
+                    <p id="PhoneNumberError"></p>
+                    </div>
+
+                    <textarea rows="4" cols="50" id="messageContact" placeholder="Message"></textarea>
+                    <p id="MessageError"></p>
+
+                    <button id="SendMessageButton">Send Message</button>
+        
+            </div>
+        </div>
+
+        <div id="cursor"></div>
+
+        <div class="map-container">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73159.00691238076!2d34.74284518481487!3d-0.7350351194147815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b3f4bd623f73b%3A0x9eb61aec5c22837e!2sKiogoro!5e0!3m2!1sen!2ske!4v1723911647030!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <footer>
+            <div class="footer-logo-container">
+
+                <img src="/icons/WID LOGO.svg" width="60px" height="60px">
+
+                <p>Wide Intelligent Data</p>
+
+                <div class="footer-social-icons">
+                    <ul>
+                  <li><a href="www.facebook.com"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></li>
+                  <li><a href="instagram.com"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+                  <li><a href="linkedin.com"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a></li>
+                  <li><a href="x.com"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a></li>
+                  <li><a href="youtube.com"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+                  <li><a href="https://www.tiktok.com/@nyachiro_"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-contact-container">
+                <span>Quick Links</span>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="About.html">About</a>
+               
+
+            </div>
+
+           <!-- <div class="bottom-subsribe-container">
+                <h3>Subsribe!</h3>
+                <div class="subsribe-input-container">
+                    <input type="email" placeholder="example@example.com" id="footerInputEmail">
+                    <button>send</button>
+                </div>
+                <p>Subsribe to our news</p>
+            </div>-->
+        </footer>
+
+        <div id="errorDisplay">
+
+        </div>
+    </body>
+</html>

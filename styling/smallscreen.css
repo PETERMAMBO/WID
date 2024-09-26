@@ -1,0 +1,377 @@
+
+@media screen and (max-width:575px){
+    .main-hero-container .box-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 130px;
+    }
+
+    .main-hero-container .main-image-container{
+        height: 100vh;
+    }
+
+    .smiling-people-image{
+        height: 60vh;
+        width: 50vh;
+    }
+
+
+    .main-hero-container .box-container .text-container h1{
+        font-size: 45px;
+        width: 300px;
+    }
+
+    .main-hero-container .box-container .side-boxes{
+        display: none;
+    }
+    .main-hero-container .box-container .text-container{
+       margin-left: 0px;
+    }
+    .top-header-container .top-menu i{
+        display: none;
+    }
+    .subscribe-container{
+        display: none;
+    }
+
+    .scroll-down-container{
+        
+    }
+    .services-Container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 50px;
+    }
+
+    .what-we-do{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portfolio-container .portfolio-image-container .pick-up-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .portfolio-container .portfolio-image-container .pick-up-container img{
+        height: 60vh;
+        width:70vw;
+        border-radius: 20px;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .portfolio-container .portfolio-image-container .pick-up-container button{
+        margin-left: 150px;
+    }
+
+    .portfolio-container .portfolio-image-container.memepal-contaainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio-container .portfolio-image-container .memepal-contaainer img{
+        height: 60vh;
+        width:70vh;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .portfolio-container .portfolio-image-container .memepal-contaainer button{
+        margin-left: 150px;
+    }
+
+    #smallSideMenu{
+        display: block;
+        color: white;
+    }
+    .video-container{
+        height: 400px;
+        width: 100%;
+    }
+    .video-container #futureVideo{
+        background-color: rgba(255,255,255,0.5);
+        border-radius: 10px;
+        height: 350px;
+        width: 90%;
+        animation: showImage ease 2s;
+    }
+    @keyframes showImage{
+        from{
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    .video-container i{
+        font-size: 40px;
+    }
+    .main-text-description h1{
+        font-size: 20px;
+    }
+    #RemoveVideo{
+        font-size: 30px;
+    }
+    .team-container h2{
+        font-size: 25px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top:95px;
+        z-index: 20;
+        background-color: #01031b;
+        width: 100%;
+        animation: sideDive 3s ease both;
+    }
+    @keyframes sideDive {
+        from{
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+    aside ul li{
+        list-style-type: none;
+        padding: 10px;
+    }
+    aside ul li a{
+        color: white;
+        text-decoration: none;
+        padding: 10px; 
+    }
+    aside ul li a:hover{
+        transition: 1s;
+        border: 1px white solid;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 10px;
+        box-sizing: border-box;
+    }
+
+    .main-about-container{
+        flex-direction: column-reverse;
+    }
+    .services-Container .text-description p{
+        width: 330px;
+    }
+
+    
+
+
+
+
+   
+}
+
+
+@media screen and (max-width:767.99px){
+  .main-hero-container .box-container .smiling-people-image{
+    width: 80%;
+  }
+
+  .top-header-container .logo-container{
+    margin-left: 10px;
+  }
+
+  .top-header-container .top-menu{
+    margin-right: 10px;
+  }
+  .main-hero-container .box-container .text-container h1{
+      font-size: 40px;
+      line-height: 35px;
+  }
+  .main-hero-container .box-container .text-container{
+    margin-top: -20px;
+    
+   
+  }
+  .scroll-down-container{
+    margin-top: 0px;
+  }
+  .services-Container{
+    margin-top: 50px;
+  }
+  footer .footer-logo-container, .footer-contact-container, .bottom-subsribe-container{
+     margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:991.91px){
+    #openSideMenu{
+        display: none;
+    }
+    #smallSideMenu{
+        display: flex;
+    }
+    .side-boxes .side-boxes-box1{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-hero-container .box-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .scroll-down-container{
+       margin-top: 0px;
+    }
+    .services-Container{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top:55px;
+        z-index: 20;
+        background-color: #01031b;
+        width: 100%;
+        animation: sideDive 3s ease both;
+    }
+    @keyframes sideDive {
+        from{
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+    aside ul li{
+        list-style-type: none;
+        padding: 10px;
+    }
+    aside ul li a{
+        color: white;
+        text-decoration: none;
+        padding: 10px; 
+    }
+    aside ul li a:hover{
+        transition: 1s;
+        border: 1px white solid;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 10px;
+        box-sizing: border-box;
+    }
+    .main-hero-container .box-container .smiling-people-image{
+        object-fit: cover;
+    }
+    #cursor{
+        display: none;
+    }
+    .contact-page{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-page .contact-form .input-contact-box input{
+         width: 300px;
+    
+    }
+    .contact-page .contact-form .input-contact-box{
+        margin-top: 50px;
+    }
+    .contact-page .contact-form  textarea{
+        width: 300px;
+   }
+
+   .main-about-container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+   }
+
+   .main-about-container .about-text p{
+    font-size: 17px;
+    width: 350px;
+    text-align: center;
+   }
+   .main-about-container .about-text h2{
+    text-align: center;
+   }
+   .main-about-container .about-text span{
+    text-align: center;
+   }
+
+   .main-about-container .about-image-container img{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .about-two-images{
+    display: flex;
+    flex-direction: row;
+   }
+
+   .about-two-images .larger-image{
+    width: 40%;
+    height: 300px;
+    object-fit: cover;
+   }
+   .about-two-images .smaller-image{
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
+    transform: translateY(150px);
+    }
+
+    .why-us{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .why-us .why-text-container p{
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .why-us .why-image img{
+        height: 300px;
+        object-fit: cover;
+        width: 80%;
+        border-radius: 10px;
+        transform: translateY(100px);
+        border-right: solid;
+        border-bottom: solid;
+        border-color: orangered;
+        border-width: 10px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and(min-width:1200px){
+    .why-us{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+}
+
+   
